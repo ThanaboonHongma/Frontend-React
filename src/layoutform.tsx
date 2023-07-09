@@ -86,7 +86,7 @@ const Layoutform: React.FC = () => {
         <>
           <Row>
             {shapePositions.slice(0, 3).map((shape, index) => (
-              <Col span={8} key={index}>
+              <Col span={7} key={index}>
                 <Button className='buttonlayout' onClick={reshuffleShapes}>
                 <div style={{ fontSize: shapeSize, lineHeight: `${shapeSize}px` }}>{shape}</div>
                 </Button>
@@ -116,7 +116,7 @@ const Layoutform: React.FC = () => {
           </Row>
           <Row>
             {shapePositions.slice(0, 3).map((shape, index) => (
-              <Col span={8} key={index}>
+              <Col span={7} key={index}>
                 <Button className='buttonlayout' onClick={reshuffleShapes}>
                   <div style={{ fontSize: shapeSize, lineHeight: `${shapeSize}px` }}>{shape}</div>
                 </Button>
