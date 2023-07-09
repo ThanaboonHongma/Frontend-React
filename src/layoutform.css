@@ -1,0 +1,27 @@
+.button{
+    height: 100px;
+}
+
+.buttoncenter{
+    height: 100px;
+    margin-inline: 40px;
+    width: 400px;
+}
+
+.p{
+    width: 150px;
+    background-color: #6eda78;
+    border-radius: 40px;
+    color: white;
+}
+
+.pcenter{
+    background-color: #6eda78;
+    border-radius: 40px;
+    color: white;
+}
+
+.buttonlayout{
+    height: 240px;
+    width: 240px;
+}

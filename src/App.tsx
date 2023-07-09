@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import MainPage from './MainPage';
+import Formpage from './Formpage';
+import Layoutform from './layoutform';
 
-function App() {
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div>
+        {/* <h2>App</h2>
+        <Link to="/">Go to Main Page</Link> */}
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/Formpage" element={<Formpage />} />
+          <Route path="/Layoutform" element={<Layoutform />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
-}
+};
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
 export default App;
+

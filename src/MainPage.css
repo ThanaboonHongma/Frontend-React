@@ -1,0 +1,26 @@
+.App{
+  background-image: linear-gradient(to right, #6eda78, #ffa200);
+  height: 100vh;
+  text-align: center;
+    display: grid;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.column{
+  float: left;
+  width: 15%;
+  padding: 15px;
+  margin: 20px;
+}
+
+.changelanguage {
+  height: 30px;
+  width: 90px;
+  border-radius: 6px;
+  border-color: white;
+}
